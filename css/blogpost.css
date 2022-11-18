@@ -1,0 +1,111 @@
+
+.post-img{
+    height: 404px;
+    overflow: hidden; 
+}
+
+.post-img img{
+    width: 100%;
+}
+
+.blog-post-content h1{
+    text-align: center;
+}
+
+.blog-post-content p{
+    font-size: 18px; 
+}
+
+.row{
+    display: flex;
+}
+
+.more-post{
+    flex-direction: column; 
+    align-items: center;
+}
+
+.blogpost-meta{ 
+    display: flex;
+    justify-content: space-between;
+}
+
+.author-info{
+    margin: 12px 0;
+}
+
+.author-info div{
+    padding: 4px 0px;
+    font-family: var(--font2);
+}
+
+.social{
+    padding-right: 53px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.myDiv {
+    border: 2px outset #32de84;   
+    text-align: center;
+    font-size: 25px;
+    background-color: lightblue;
+  }
+
+  .myDiv:hover {
+    background-color: white;
+    border: 2px outset black; 
+  }
+
+  #panel {  
+      padding: 50px;  
+      display:none;  
+      background-color: #D3D3D3;
+      background-image: url("https://gumlet.assettype.com/newslaundry%2Fimport%2F2019%2F09%2FWhy-some-Indian-news-outlets-are-bringing-back-the-comment-section-AI.jpg?auto=format%2Ccompress&fit=max&w=576&dpr=1.0");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }  
+
+  #line1 {
+  text-align: center;
+  font-size: 30px;
+  }
+
+  #line2 {
+  text-align: center;
+  font-size: 28px;
+  }
+
+  #line3 {
+  text-align: center;
+  }
+
+  .line4:link, .line4:visited {
+    background-color: #32de84;
+    color: black;
+    font-size: 35px;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .line4:hover, .line4:active {
+    color: black;
+    font-size: 35px;
+    background-color: white;
+    border: 2px solid #1b262c;
+  }
+
+  mark{
+      background-color: #FF00FF;
+      color: black;
+      opacity: 0.7;
+  }
+
+  #line6{
+    background-color: #9370DB;
+    color: black;
+    opacity: 0.8;
+  }

@@ -1,0 +1,249 @@
+
+* {
+  margin: 0;
+  padding: 0; 
+}
+
+:root {
+
+background-color: #F0F0F0;
+}
+
+
+.navigation {
+  margin-top: 25px;
+  font-family: var(--font1);
+  /* height: 74px;  */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+}
+
+.nav-left span {
+  font-size: 60px;
+  padding-top: 10px;
+}
+
+.nav-left ul {
+  display: flex;
+  align-items: center;
+  margin: 0 50px;
+  font-size: 40px;
+  padding-bottom: 23px;
+}
+
+.nav-left ul li {
+  list-style: none;
+  margin: 0 15px;
+  font-family: David Libre;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-left ul li a {
+  text-decoration: none;
+  color: #32de84;
+}
+
+.nav-left ul li a:hover {
+  color: white ;
+  font-weight: bolder;
+}
+
+.socialMedia{
+position: relative;
+left: -10px;
+}
+
+
+/*left side icons start*/
+.fab {
+    color: #000;
+}
+
+.fab:hover {
+    color: #d0cecf;
+    transform: rotate(360deg);
+}
+
+.content {
+  height: 100%;
+  display: flex;
+  margin-top: 32px;
+  padding: 9px;
+  position: relative;
+}
+
+.content::after {
+  content: "";
+  background-image:"img/11.svg";
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  opacity: 0.9;
+  border-radius: 12px;
+}
+
+.main_header__div {
+    height: calc(150vh - 30vh);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.05) 50%, rgba(0, 0, 0, 0)), url('https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-repeat: no-repeat;
+    background-size: 1600px 900px;
+
+}
+
+.content-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 49px;
+  z-index: 1;
+}
+
+mark{
+  background-color: black;
+  color: #FF69B4;
+}
+
+.mainHeading{
+font-family: David Libre;
+font-size: 30px;
+color: #FF69B4;
+}
+
+.mainDetails{
+  font-family: David Libre;
+  font-size: 25px;
+  color: #7B68EE;
+
+}
+
+.content-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-right img {
+ height: 355px;
+  border: 3px solid black;
+  border-radius: 100000px;
+  
+}
+
+.home-articles {
+  padding: 18px;
+  margin-top: 23px;
+  position: relative;
+}
+
+.year-box {
+  position: absolute;  
+  right: 0px;
+  top: 100px;
+  width: 234px;
+  height: 255px;
+  font-size: 18px;
+}
+
+.year-box div {
+  margin: 12px 0px;
+}
+
+.home-article {
+  display: flex;
+  margin: 25px;
+}
+
+.home-article img {
+  width: 300px;
+}
+
+.home-article-content {
+  align-self: center;
+  padding: 25px;
+}
+
+.home-article-content a {
+  text-decoration: none;
+  color: black;
+}
+/* .home-articles{} */
+.footer {
+  height: 50px;
+  background-color: var(--main-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+}
+
+.footer a {
+  color: white;
+}
+
+.about_me_div {
+    width: auto;
+    height: 55rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, transparent 50%, rgba(208, 206, 207, 0.8) 50%), url('../images/thapa.jpg');
+    background-size: 10px;
+}
+
+.about_me_div p:first-child {
+    padding-bottom: 0.2rem;
+    font-size: 1.0rem;
+}
+
+.about_me_div p {
+    font-size: 1.0rem;
+    padding-bottom: 1rem;
+    color: #000;
+}
+
+#myInput {
+  background-image: url('https://www.w3schools.com/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-height:135px;
+  overflow:auto;
+  text-indent:10px;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+hr.contactHorizontal{
+  border: 5px solid #1b262c;
+  border-radius: 10px;
+}

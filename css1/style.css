@@ -1,0 +1,537 @@
+
+/* Importing Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=David+Libre&family=Josefin+Sans&display=swap');
+
+/* Root Element CSS */ 
+
+:root {
+    --bg-size: 100% 100%;
+    --main-color: #fff;
+    --title: 'Josefin Sans', sans-serif;
+    --font-para: 'David Libre', serif;
+    --btn-color: #bbe1fa;
+    --btn-font-color: #000;
+    --btn-font: 1.5rem;
+    --eff: .3s all ease;
+}
+
+/* Navigation Section */
+
+.navigation {
+  margin-top: 25px;
+  font-family: var(--font1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+}
+
+.nav-left span {
+  font-size: 60px;
+  padding-top: 10px;
+}
+
+.nav-left ul {
+  display: flex;  
+  margin: -120px 0px;
+}
+
+.nav-left ul li {
+  list-style: none;
+  margin:0 15px;
+  font-family: var(--font2);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-left ul li a {
+  text-decoration: none;
+  color: #32de84; /* #66FF00; #4FFFB0;#8FBC8B;#006A4E  */
+}
+
+.nav-left ul li a:hover {
+  color: var(--main-bg-color);
+  font-weight: bolder;
+}
+
+/* Selecting Default Font */
+
+* {
+    font-family: var(--font-para);
+}
+
+/* Selecting Default Font Size */
+
+html {
+    font-size: 62.5%;
+}
+
+p,
+label,
+input::placeholder {
+    font-size: 1.9rem;
+    line-height: 170%;
+    color: #6c757d;
+}
+
+/* Like Button CSS */
+
+.fa {
+    font-size: 50px;
+    cursor: pointer;
+    user-select: none;
+    color: black;
+}
+
+.fa:hover {
+    color: white;
+}
+
+/* Effect */
+
+figure img,
+.fab {
+    transition: var(--eff);
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body {
+    background: hsl(84, 3%, 94%);
+}
+
+/* Article Section Of The Website */
+
+.main_header__div {
+    height: calc(90vh - 30vh);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0)), url('https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-size: var(--bg-size);
+}
+
+.main_heading {
+    font-family: var(--title);
+    font-weight: bold;
+    font-size: 5rem;
+    color: #1b262c;
+}
+
+.main_heading__para {
+    font-size: 2.2rem;
+}
+
+.main_header__div p {
+    font-weight: bold;
+    font-size: 3.5rem;
+    font-family: var(--title);
+    color: var(--main-color);
+    padding-bottom: 0rem;
+}
+
+.main_header__div h2 {
+    font-size: 6.5rem;
+    font-weight: bold;
+    font-family: var(--title);
+    color: var(--main-color);
+    padding-bottom: 2rem;
+    position: relative;
+    transition: var(--eff);
+}
+
+.main_header__div span {
+    font-family: var(--title);
+}
+
+.animateWord div {
+    overflow: hidden;
+    position: relative;
+    float: right;
+    height: 8rem;
+    padding-top: 1rem;
+    margin-top: -1rem;
+}
+
+.animateWord div li {
+    font-weight: 700;
+    padding: 0 1rem;
+    height: 4.5rem;
+    margin-bottom: 4.5rem;
+    display: block;
+    font-family: var(--title);
+}
+
+
+
+/* Response Buttons */
+
+.main_header__div button {
+    color: var(--btn-font-color);
+    border-width: 0;
+    font-size: var(--btn-font);
+    transition: var(--eff);
+    padding: .8rem 2rem;
+    background-color: var(--btn-color);
+    border-color: var(--btn-color);
+    font-family: var(--title);
+    outline: none;
+}
+
+.main_header__div button:hover,
+.left_div__like:hover,
+.left_div__reply:hover,
+figure img:hover,
+.subs_btn:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1rem 3rem -1rem rgba(255, 255, 255, 0.8);
+}
+
+/************* left side of the blog style starts*/
+
+.blog_left__divh1 {
+    font-family: var(--title);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.blog_left__div .blog_title {
+    font-weight: 400;
+    font-size: 2.2rem;
+}
+
+.blog_left__div p span {
+    color: #1b262c;
+}
+
+.left_div_btns {
+    margin-top: 3rem;
+    transition: var(--eff);
+}
+
+ .left_div__like {
+    color: var(--btn-font-color);
+    border-width: .2rem;
+    font-size: var(--btn-font);
+    transition: var(--eff);
+    padding: .8rem 2rem;
+    background-color: #32de84;
+    border-color: var(--btn-color);
+    font-family: var(--title);
+}
+
+.left_div__reply {
+    color: var(--btn-font-color);
+    border-width: .2rem;
+    font-size: var(--btn-font);
+    transition: var(--eff);
+    padding: .8rem 2rem;
+    background-color: #32de84;
+    border-color: var(--btn-color);
+    font-family: var(--title);
+}
+
+.replies {
+    margin: 2rem 0;
+    padding: 1rem 0;
+    transition: var(--eff);
+    display: none;
+}
+
+
+/* Submit Comment Button */
+
+a.submitComment:link, a.submitComment:visited {
+    background-color: #1b262c;
+    color: black;
+    font-size: 15px;
+    color: white;
+    position: absolute;
+    right: 50px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  
+  }
+  
+  a.submitComment:hover, a.submitComment:active {
+    color: black;
+    font-size: 15px;
+    background-color: white;
+    border: 2px solid #1b262c;
+  }
+  
+  /* Submit Subscribe Button */
+  
+  a.submitSubscribe:link, a.submitSubscribe:visited {
+    background-color: #1b262c;
+    color: black;
+    font-size: 15px;
+    color: white;
+    position: relative;
+    right: 0px;
+    left:150px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  
+  }
+  
+  a.submitSubscribe:hover, a.submitSubscribe:active {
+    color: black;
+    font-size: 15px;
+    background-color: white;
+    border: 2px solid #1b262c;
+  }
+  
+  /* Click here to read more articles section */
+  
+  p.moreArticles1{
+  
+      color: blue;
+      
+      }
+  
+  /* Click to add more articles button */
+      
+  a.moreArticles:link, a.moreArticles:visited {
+    background-color: #3366CC;
+    color: white;
+    font-size: 15px;  
+    position: absolute;
+    top: 9px;
+    right: 40px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  
+  }
+  
+  a.moreArticles:hover, a.moreArticles:active {
+  color: black;
+  font-size: 15px;
+    background-color: white;
+    border: 2px solid #1b262c;
+  }
+  
+
+/************************************ right side div ************************************/
+
+
+/*about me div*/
+.about_me_div {
+    width: auto;
+    height: 40rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, transparent 1%, rgba(208, 206, 207, 0.8) 70%), url('https://miro.medium.com/max/520/1*CwazU1xhj909Q4D1keLNhg.jpeg');
+    background-size: var(--bg-size);
+}
+
+#about_me_heading{
+position:relative;
+left: 30px;
+font-size: 45px;
+color:#32de84 ;
+}
+
+.about_me_div p:first-child {
+    padding-bottom: 0.2rem;
+    font-size: 2.2rem;
+}
+
+.about_me_div p {
+    font-size: 2.0rem;
+    padding-bottom: 1rem;
+    color: #8B008B;
+}
+
+.right_div__title {
+    background: #d0cecf;
+    /*background: #adaea9;*/
+    color: #000;
+}
+
+.right_div__title h2 {
+    font-size: 2.5rem;
+    padding-left: 2rem;
+}
+
+/*popular post*/
+.right_div_post {
+    background: #fff;
+    box-shadow: 0 1rem 3rem -1rem rgba(0, 0, 0, 0.4);
+}
+
+.right_sub__div {
+    background: #fff;
+}
+
+.right_sub__div .row {
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+}
+
+.right_sub__div .row:last-child {
+    margin-bottom: 0;
+}
+
+.row>.right_div_post {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.popular_post__img1 {
+    background-image: url('https://i.gadgets360cdn.com/large/oneplus_9_pro_image_twitter_evan_blass_1615970945464.jpg?downsize=750:*&output-quality=80&output-format=webp');
+    background-size: var(--bg-size);
+}
+
+.popular_post__img2 {
+    background-image: url('https://i.gadgets360cdn.com/large/google_lens_main_google_website_1615970376400.jpg?downsize=750:*&output-quality=80&output-format=webp');
+    background-size: var(--bg-size);
+}
+
+.popular_post__img3 {
+    background-image: url('https://i.gadgets360cdn.com/large/GoPro_Quik_Launch_1615967420739.jpg?downsize=750:*&output-quality=80&output-format=webp');
+    background-size: var(--bg-size);
+}
+
+.popular_post__img4 {
+    background-image: url('https://i.gadgets360cdn.com/large/redmi_smart_tv_x55_main_1615965437274.jpg?downsize=750:*&output-quality=80&output-format=webp');
+    background-size: var(--bg-size);
+}
+
+a.pop_post1{
+font-size: 12px;
+}
+
+/* unvisited link */
+a.pop_post1:link {
+  color: #808080;
+}
+
+/* visited link */
+a.pop_post1:visited {
+  color: #808080;
+}
+
+/* mouse over link */
+a.pop_post1:hover {
+  color: #808080;
+}
+
+/* selected link */
+a.pop_post1:active {
+  color: #808080;
+}
+
+/*blog tags start*/
+.tags_main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(4rem, 11rem));
+    grid-gap: 1.5rem;
+    
+}
+
+.tags_main a {
+    font-size: 1.7rem;
+    line-height: 170%;
+    font-weight: lighter;
+    background: #6c757d;
+    transition: var(--eff);
+}
+
+.tags_main a:hover {
+    color: var(--btn-font-color);
+    background: var(--btn-color);
+}
+
+.right_sub__div {
+    padding: 2.5rem 1rem;
+}
+
+/*advertisement style start*/
+.adevetise_img {
+    min-width: 10rem;
+    height: 20rem;
+    display: grid;
+    place-items: center;
+}
+
+/*left side icons start*/
+.fab {
+    color: #000;
+}
+
+.fab:hover {
+    color: #d0cecf;
+    transform: rotate(360deg);
+}
+
+/*right Subscribe  style*/
+.right_sub__div #exampleFormControlInput1 {
+    padding: 1.5rem 1rem;
+    margin: 1.5rem 0;
+}
+
+.subscribe_text{
+ color:#8B008B;
+
+}
+
+footer p {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+._show{
+    margin: 20px 0;
+    transition: var(--eff);
+    display: block;
+}
+
+/*header responsive code*/
+@media(max-width:998px) {
+    html {
+        font-size: 60%;
+    }
+
+    .left_div__blog {
+        margin: 3rem 0;
+    }
+
+    p,
+    label,
+    input::placeholder {
+        font-size: 2.2rem;
+    }
+
+    :root {
+        --btn-font: 2rem;
+    }
+
+    .main_header__div h2 {
+        font-size: 5rem;
+    }
+
+}
+
+@media(max-width:768px) {
+    html {
+        font-size: 45%;
+    }
+
+    .left_div__blog {
+        margin: 3rem 0;
+    }
+
+}
